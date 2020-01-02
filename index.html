@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>banner</title>
+    <style>
+        .banner {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner"></div>
+    <div class="banner1"></div>
+</body>
+<script src="libs/jquery.js"></script>
+<script src="jQuery.banner.1.0.js"></script>
+<script>
+    $(".banner").banner({
+        //必传,数组,图片路径
+        img: ["img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg"],
+        btn: true, //可选，默认为true
+        list: true, //可选，默认为true
+        autoPlay: true, //可选，默认为true
+        delayTime: 3000, //可选，默认为2000
+        moveTime: 500, //可选，默认为200
+        index: 0 //可选，默认为0
+    })
+    $(".banner1").banner({
+        //必传,数组,图片路径
+        img: ["img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg"],
+        btn: true, //可选，默认为true
+        list: true, //可选，默认为true
+        autoPlay: true, //可选，默认为true
+        delayTime: 3000, //可选，默认为2000
+        moveTime: 500, //可选，默认为200
+        index: 0 //可选，默认为0
+    })
+</script>
+
+</html>
